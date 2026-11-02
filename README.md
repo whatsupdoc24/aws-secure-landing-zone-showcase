@@ -40,6 +40,48 @@ The platform is designed around five infrastructure domains:
 
 ## Technologies
 
+- **Cloud:** Amazon Web Services (AWS)
+- **Infrastructure as Code:** Terraform
+- **CI/CD:** GitHub Actions
+- **Security Scanning:** Checkov
+- **Identity and Access:** AWS IAM, OIDC
+- **Governance:** AWS Organizations, Service Control Policies (planned)
+- **State Management:** Amazon S3, Terraform state locking
+
+## Security Architecture & Threat Modeling
+
+**[View the AWS Landing Zone Threat Model](docs/security/threat-model.md)**
+
+The threat model documents the security architecture,
+trust boundaries, potential attack scenarios, and
+mitigation strategies for the AWS landing zone.
+
+### Security Areas Covered
+
+- GitHub Actions OIDC authentication and IAM trust
+- IAM privilege escalation and least-privilege design
+- Terraform state security
+- Infrastructure change control
+- Automated Infrastructure as Code security scanning
+- AWS Organizations governance and SCPs
+- Centralized security logging
+- Network segmentation and lateral movement
+
+### Security Engineering Approach
+
+The project follows a risk-based security design process:
+
+1. Identify infrastructure assets and trust boundaries.
+2. Evaluate potential threats and attack paths.
+3. Design preventive and detective security controls.
+4. Implement automated security checks.
+5. Validate deployed controls and document residual risks.
+
+**Implementation status:** Terraform validation and Checkov
+security scanning are operational in the public showcase.
+Additional AWS security controls remain under development.
+
+
 ## Technical Implementation Examples
 
 This repository includes standalone, sanitized examples
