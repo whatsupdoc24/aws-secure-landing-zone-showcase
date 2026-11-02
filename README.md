@@ -45,6 +45,23 @@ The platform is designed around five infrastructure domains:
 
 ## Engineering Case Study: Importing an Existing AWS Organization
 
+### Featured Engineering Case Study
+
+**[Read the full AWS Organizations Terraform Import Case Study](docs/case-studies/aws-organizations-import.md)**
+
+A technical walkthrough covering:
+
+- Adopting existing AWS infrastructure into Terraform state
+- Troubleshooting AWS IAM access-denied errors
+- Identifying potentially disruptive Terraform changes
+- Securing GitHub Actions deployments with AWS OIDC
+- Implementing plan verification and state-locking safeguards
+- Confirming zero configuration drift after import
+
+**Verified result:** Existing AWS Organization successfully imported
+with no subsequent Terraform changes required.
+
+
 ### Challenge
 
 An existing AWS Organization needed to be brought under Terraform management without recreating the organization, disrupting trusted AWS service
