@@ -12,6 +12,18 @@ The underlying infrastructure is developed in a separate repository. This public
 
 ## Architecture
 
+### AWS Landing Zone Architecture
+
+[View the AWS Infrastructure Architecture Diagram](docs/architecture.md)
+
+The architecture documents the relationship between AWS Organizations,
+Terraform automation, governance, networking, identity, centralized
+logging, and production workloads.
+
+**Current status:** AWS Organizations successfully imported and verified.
+Remaining infrastructure components are under development.
+
+
 The platform is designed around five infrastructure domains:
 
 | Domain | Purpose | Status |
