@@ -90,7 +90,7 @@ The one-time import workflow was then disabled to prevent unintended re-executio
 
 Successfully adopted an existing AWS Organization into Terraform state while preserving its existing configuration.
 
-Verified that Terraform detected no configuration drift after the import.
+Verified that the post-import Terraform plan reported "No changes," confirming that Terraform detected no differences between the configuration and observed AWS Organization resources at the time of verification.
 
 This case study demonstrates practical experience with infrastructure adoption, AWS identity and access management, Terraform change control, and secure CI/CD workflow design.
 
