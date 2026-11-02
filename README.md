@@ -4,6 +4,8 @@
 
 [![Terraform Validation](https://github.com/whatsupdoc24/aws-secure-landing-zone-showcase/actions/workflows/terraform-validation.yml/badge.svg)](https://github.com/whatsupdoc24/aws-secure-landing-zone-showcase/actions/workflows/terraform-validation.yml)
 
+[![Terraform Security Scan](https://github.com/whatsupdoc24/aws-secure-landing-zone-showcase/actions/workflows/terraform-security-scan.yml/badge.svg)](https://github.com/whatsupdoc24/aws-secure-landing-zone-showcase/actions/workflows/terraform-security-scan.yml)
+
 ## Project Overview
 
 This project documents the architecture, engineering decisions, and implementation progress of an AWS landing zone designed around secure infrastructure provisioning, governance, and DevSecOps practices.
