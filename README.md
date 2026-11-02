@@ -36,6 +36,44 @@ The platform is designed around five infrastructure domains:
 
 ## Technologies
 
+## Technical Implementation Examples
+
+This repository includes standalone, sanitized examples
+demonstrating AWS cloud security and DevSecOps engineering practices.
+
+### Infrastructure as Code
+
+**[AWS IAM — GitHub Actions OIDC Trust Role](examples/terraform/github-actions-oidc/main.tf)**
+
+Terraform example demonstrating:
+- IAM role trust policies for GitHub OIDC federation
+- Repository and branch restrictions
+- Short-lived credential authentication design
+- Least-privilege permission separation
+
+### CI/CD Automation
+
+**[Terraform CI Validation Pipeline](examples/github-actions/terraform-security-pipeline.yml)**
+
+GitHub Actions workflow example demonstrating:
+- Terraform formatting checks
+- Terraform initialization without a remote backend
+- Terraform configuration validation
+- Pull-request validation triggers
+- Read-only repository permissions
+
+### Implementation Notes
+
+These examples are intentionally separated from the
+private commercial infrastructure implementation.
+
+The CI workflow is a reference example and does not
+automatically execute from its current location.
+
+The OIDC role example assumes an existing AWS OIDC provider
+and does not attach AWS permissions or deploy infrastructure.
+
+
 - **Cloud:** Amazon Web Services (AWS)
 - **Infrastructure as Code:** Terraform
 - **CI/CD:** GitHub Actions
