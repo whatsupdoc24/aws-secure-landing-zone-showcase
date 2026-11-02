@@ -166,8 +166,3 @@ A technical walkthrough covering:
 
 **Verified result:** Existing AWS Organization successfully imported
 with no subsequent Terraform changes required.
-
-
-### Challenge
-
-An existing AWS Organization needed to be brought under Terraform management without recreating the organization, disrupting trusted AWS service
