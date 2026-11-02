@@ -141,17 +141,7 @@ automatically execute from its current location.
 The OIDC role example assumes an existing AWS OIDC provider
 and does not attach AWS permissions or deploy infrastructure.
 
-
-- **Cloud:** Amazon Web Services (AWS)
-- **Infrastructure as Code:** Terraform
-- **CI/CD:** GitHub Actions
-- **Authentication:** AWS IAM and OpenID Connect (OIDC)
-- **Governance:** AWS Organizations and Service Control Policies
-- **Security:** Least-privilege design, encrypted remote state, and infrastructure change review
-
 ## Engineering Case Study: Importing an Existing AWS Organization
-
-### Featured Engineering Case Study
 
 **[Read the full AWS Organizations Terraform Import Case Study](docs/case-studies/aws-organizations-import.md)**
 
