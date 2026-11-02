@@ -1,0 +1,43 @@
+
+name: Terraform Security Scan
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "examples/terraform/**"
+      - ".github/workflows/terraform-security-scan.yml"
+  pull_request:
+    paths:
+      - "examples/terraform/**"
+      - ".github/workflows/terraform-security-scan.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checkov:
+    name: Checkov Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Checkov
+        run: pip install "checkov==3.2.495"
+
+      - name: Scan Terraform configuration
+        run: |
+          checkov \
+            --directory examples/terraform \
+            --framework terraform \
+            --compact \
+            --quiet
