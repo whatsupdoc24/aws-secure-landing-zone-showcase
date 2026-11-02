@@ -50,6 +50,28 @@ The platform is designed around five infrastructure domains:
 
 ## Security Architecture & Threat Modeling
 
+### Security Controls & Verification
+
+**[View the AWS Security Controls Matrix](docs/security/security-controls-matrix.md)**
+
+This matrix maps cloud security risks to AWS and DevSecOps controls,
+documents implementation status, and identifies verification methods.
+
+It covers:
+
+- AWS IAM and OIDC authentication
+- Least-privilege access controls
+- Terraform state security
+- Infrastructure change management
+- Automated Terraform validation
+- Checkov security scanning
+- AWS Organizations governance and SCPs
+- Centralized logging and network security
+
+**Validation approach:** Security controls are tracked as planned,
+implemented, or verified based on available engineering evidence.
+
+
 **[View the AWS Landing Zone Threat Model](docs/security/threat-model.md)**
 
 The threat model documents the security architecture,
